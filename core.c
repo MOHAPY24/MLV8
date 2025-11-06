@@ -14,7 +14,7 @@ void add_opcode(unsigned char opcode, unsigned char location){
     memory[location] = opcode;
 }
 
-int runREPL(){
+int run(){
     if(check_if_in(0xFF, memory, MEM_SIZE) == false){
         printf("ERR! Opcode: '0xFF' not found in memory set, stopping to prevent memory overload: 01..\n");
         return 1;

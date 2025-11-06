@@ -7,6 +7,6 @@ int main(){
     add_opcode(0x02, 0x03);
     add_opcode(2, 4);
     add_opcode(0xFF, 0x05);
-    runREPL();
+    run();
     return 0;
 }
