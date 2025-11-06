@@ -1,5 +1,5 @@
 // Re-implementation of my MBOA8 CPU Emulator in C
-// Renamed: MLV8 (Mini Low-level Von neuman 8 bit)
+// Renamed: MLV8 (Mini Low-level Von neumann 8 bit)
 #include <stdio.h>
 #include "utils.c"
 #include <stdbool.h>
