@@ -1,11 +1,7 @@
 #include "core.c"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-unsigned char parse_opcode(char *input) {
-    return (unsigned char)strtol(input, NULL, 0);
-}
 
 
 int main(){

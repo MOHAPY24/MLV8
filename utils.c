@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 bool check_if_in(unsigned int item, unsigned char *array, size_t length){
     int i;
@@ -9,4 +10,8 @@ bool check_if_in(unsigned int item, unsigned char *array, size_t length){
         }
     }
     return false;
+}
+
+unsigned char parse_opcode(char *input) {
+    return (unsigned char)strtol(input, NULL, 0);
 }
