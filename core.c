@@ -92,7 +92,7 @@ int run(){
             case 0x12: // RSE
                 clear_memory();
                 clear_registers();
-                ip++;
+                ip = 0;
                 break;
         }
     }
