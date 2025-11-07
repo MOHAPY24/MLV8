@@ -1,12 +1,28 @@
 #include "core.c"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+unsigned char parse_opcode(char *input) {
+    return (unsigned char)strtol(input, NULL, 0);
+}
+
 
 int main(){
-    add_opcode(0x00, 0x00);
-    add_opcode(0x01, 0x01);
-    add_opcode(2, 2);
-    add_opcode(0x02, 0x03);
-    add_opcode(2, 4);
-    add_opcode(0xFF, 0x05);
+    char command[256];
+    int location = 0;
+    printf("MLV8 >> ");
+    scanf("%s", command);
+    printf("Location >> ");
+    scanf("%d", &location);
+    add_opcode(parse_opcode(command), location);
+    if(strcmp(command, "0x00") != 0){
+        add_opcode(1, location+1);
+        add_opcode(0xFF, location+2);
+    }
+    else {
+        add_opcode(0xFF, location+1);
+    }
     run();
     return 0;
 }

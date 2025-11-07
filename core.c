@@ -10,7 +10,7 @@ unsigned char memory[MEM_SIZE]; // Memory tape
 unsigned int ip = 0; // Pointer
 int registers[NUM_REGS]; // Registers
 
-void add_opcode(unsigned char opcode, unsigned char location){
+void add_opcode(unsigned char opcode, int location){
     memory[location] = opcode;
 }
 
@@ -93,6 +93,11 @@ int run(){
                 clear_memory();
                 clear_registers();
                 ip = 0;
+                break;
+            case 0x13: // CLR
+                clear_memory();
+                clear_registers();
+                ip++;
                 break;
         }
     }

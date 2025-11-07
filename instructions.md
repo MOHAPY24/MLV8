@@ -10,3 +10,4 @@
 * JMP (0x10)
 * JZ (0x11)
 * RSE (0x12): Resets registers and memory.
+* CLR (0x13): Resets registers and memory but advances pointer.
