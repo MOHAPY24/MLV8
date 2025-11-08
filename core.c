@@ -99,6 +99,9 @@ int run(){
                 clear_registers();
                 ip++;
                 break;
+            default:
+                printf("ERR! Unknown Opcode: 0x%02X at address 0x%04X\n: 2.....", opcode, ip);
+                return 1;
         }
     }
     return 0;
