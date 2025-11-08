@@ -6,8 +6,8 @@ MLV8 (Mini Low-level Von Neumann 8 bit) is the C improvment and continuation of 
 MLV8 improves on MBOA8 by using C instead of Python for preformance, a more minimal and neuanced [instruction set](instructions.md).
 
 ## Architecture
-
-Based on the Von Neumann architechture, where instructions and data are stored in the same memory unit. In-tern making the CPU very minimal and simple.
+Based on the Von Neumann architechture, where instructions and data are stored in the same memory unit. In-tern making the CPU very minimal and simple. 
+Written in C for preformance and low-level memory managment. improving the speed of execution compared to MBOA8 which was written in Python.
 
 ## Installation and Usage
 
@@ -38,5 +38,13 @@ after them to prevent any issues and let the next instruction work well.
 
 Any error raised in the CPU will have a number at the end of the message, those are the error id's, see what they mean at [error classification sheet](errors.md).
 
+## Contributing
+Feel free to open issues or make pull requests to improve MLV8.
+
+## Acknowledgements
+- Thanks to all open source contributors for making C compilers and tools available.
+- Inspired by the original MBOA8 project.
+
+
 ## LICENSE
-Licensed under the BSD-3 Clause, see more in [LICENSE](LICENSE).
+Licensed under the BSD-3 Clause, see more in [LICENSE](LICENSE) © 2024 MOHAPY24
