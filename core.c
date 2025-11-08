@@ -55,7 +55,7 @@ int run(){
         opcode = memory[ip];
         printf("Opcode: %u\n", memory[ip]);
         printf("Pointer: %u\n", ip);
-        printf("Registers: %d\n", *registers);
+        printf("Register 0: %d\n", registers[0]);
         switch (opcode) {
             case 0x01: // LDA
                 registers[0] = memory[ip+1];
